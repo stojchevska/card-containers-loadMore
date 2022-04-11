@@ -1,0 +1,79 @@
+body{
+    font-family: Arial;
+}
+#mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+#mainContainer div {
+    width: 350px;
+    height: 600px;
+    margin: 10px 0;
+    padding: 20px 10px;
+    position: relative;
+    border: 1px solid lightgray;
+}
+#mainContainer div .profileImg{
+    width: 50px;
+    height: 50px;
+    display: inline;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#mainContainer div .name{
+    font-size: 15px;
+    position: relative;
+    display: inline;
+    bottom: 20px;
+    left: 10px;
+}
+#mainContainer div .date{
+    font-size: 12px;
+    position: relative;
+    display: inline;
+    left: -72px;
+    bottom: 5px;
+
+}
+#mainContainer div .instagramLogo{
+    position: relative;
+    float: right;
+    top: 20px;
+
+}
+#mainContainer div .img{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+#mainContainer div .description {
+    font-size: 14px;
+    padding: 0 2px 15px 2px;
+    border-bottom: 1px solid lightgray;
+}
+
+#mainContainer div .numLikes{
+    font-size: 14px;
+    position: absolute;
+    bottom: 2px;
+}
+@media only screen and (max-width: 768px) {
+    #mainContainer{
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    #mainContainer {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    #mainContainer{
+        width: 100%;
+    }
+}
